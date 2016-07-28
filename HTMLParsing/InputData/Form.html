@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta name='viewport' content='width = device-width'>
+	<link rel="stylesheet" href="Settings.css" type="text/css" />
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="jquery.maskedinput.js" type="text/javascript"></script>
+	<script src="jquery.constrain.js" type="text/javascript"></script>
+	<script src="jquery.watermark.js" type="text/javascript"></script>
+	<link rel="shortcut icon" href="../Images/Cherwell.ico" type="image/x-icon" />
+	<script type="text/javascript"> jQuery(function($) { $.mask.definitions['~'] = '[+-]'; $.mask.definitions['@'] = '[ap]'; }); </script>
+</head>
+<body>
+	<form name='inputForm'>
+		<fieldset>
+			<legend><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAlNJREFUOE+dU11Ik2EYPW6WqWtGrMW0HwwrLCi8GOsH6cbQmy6SurGbGnURlLlu+jV2Y0ySVtCskaRZ1JWkI8hijZZlumYudLpSCcoKtTDTwNW20/N9E6SLoHXg8PKe857ned6X78N/Im1uTQ3+Wkx+6y1iwJ3J4+UoFenfC/kceM/xcnLYTIZzGboBirwp6c4h6EZWwAmftwZ3ZKtLqkDEDQM/lZEjEo6sIXuz+d2nFqhMnhAM1mLxWGA7+aFEuqxn4KpWObBW8fwOhDlUSPavlLCOsS4w3KwWqFJ8Ff46/ORoKTlURPYtF4IbV8EhVnrPdS0TrxaRLzWMdoIzT8DGSsyIp7wDEKqHkaPbyDcbpEsu2bNQCJqWwiV2Zl8TGOsGpyU46QWnZPx1eWgUL1ct4D8PDwdNZCiHDGo5+xwcbVNHvDBwDSZZLQd2ornNDo4/AO/aEBfNJtQIAc85xGMBqOP9eCodHoO3jiEq1t4OJ6beeTfTY8czkwHFOdmoysqAU7wValiBfTdsrWcRV8b7+gicaAeNejSJlRdpkSuNWOR6+fKAaWw5hYTo8+Guiyhur8bbHYUoyViAQzUV6HQdxGexrEJNsCGDfK1nQt4g+gI0F+Cm6PlKVsV9O7o5sYf8uJUdl7R0HcYVkbcI9Yp/2QrrwG3wy0Owbj+GRToq1CqeintnMM1IgXRZwl/SobVaHbE86apQDluEJ4UVwmzhPOqP4DT7wVkJj8kLG3Tq3Vcn3T/w1+8+fZcZJxz74F+mR4Psy4Qp/23KmEahQZhCGPgN2kMbpMGbVP4AAAAASUVORK5CYII=' height='16' width='16'>&nbsp;The following information is needed: </legend>
+			<ol>
+				<li>
+					<label class='prompt'>Please select a Cause Code:</label>
+					<select name='Input_1' id='Input_1'>
+						<option value='Duplicate'>Duplicate</option>
+						<option value='Hardware Malfunction'>Hardware Malfunction</option>
+						<option value='Outage'>Outage</option>
+						<option value='Permissions'>Permissions</option>
+						<option value='Request'>Request</option>
+						<option value='Resolved From Problem'>Resolved From Problem</option>
+						<option value='Self Healing Event'>Self Healing Event</option>
+						<option value='Software Malfunction'>Software Malfunction</option>
+						<option value='Untrained User'>Untrained User</option>
+						<option value='Withdrawn'>Withdrawn</option>
+					</select>
+				</li>
+				<li><label class='multiline prompt'>Please enter the close description:</label><br /><textarea class='NotRequired' name='Input_2' id='Input_2' rows='3'></textarea></li>
+				<li>
+					<label class='prompt'>Please select a Resolution Code:</label>
+					<select name='Input_3' id='Input_3'>
+						<option value='Cheated'>Cheated</option><option value='Bluffed the user'>Told the user some bogus story</option>
+						<option value='Actually Fixed'>Really fixed the problem</option>
+					</select>
+				</li>
+			</ol>
+		</fieldset>
+	</form>
+</body>
+</html>
