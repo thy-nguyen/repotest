@@ -34,13 +34,7 @@ namespace HTMLParsing
 
             foreach (var input in inputs.Where(x => x.DataType == Input.DataTypes.Validated))
             {
-				/*
-                 * //select[@name='Input_1']
-                 * All <select> elements in the context node which have a name attribute equal to InPut_1.
-                 */
-	            //string pattern = string.Format("//select[@name='{0}']", input.InputId);
 	            string pattern = $"//select[@id='{input.InputId}'][1]/option";
-
 	            var optionNodes = htmlDoc.DocumentNode.SelectNodes(pattern);
 				if (optionNodes != null)
 					input.PromptValues = new List<string>(optionNodes.Select(x => x.InnerText));
