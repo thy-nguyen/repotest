@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LNB
 {
@@ -12,32 +8,13 @@ namespace LNB
 		{
 			int[] denom = { 500, 100, 50, 10, 5, 2, 1, 1000 };
 			int amount = 2348;
-			List<int> results = lnb(denom, amount);
-			Console.WriteLine("Array line: "+ string.Join(",", results.ToArray()));
-		}
+			var results = MoneyUtilities.DetermineLeastNumberOfBills(denom, amount);
 
-		public static List<int> lnb(int[] arr, int b)
-		{
-			int[] sortedDenom = arr.OrderByDescending(i => (int) i).ToArray();
-
-			List<int> result = new List<int>();
-
-			//int[] result;
-			int newAmount = b;
-
-			for (int i = 0; i < arr.Length; i++)
-			{
-				int count = newAmount / sortedDenom[i];
-				newAmount = newAmount % sortedDenom[i];
-
-				if (count >= 0)
-				{
-					result.Add(count);
-					result.Add(sortedDenom[i]);
-				}
-			}
-
-			return result;
+			Console.WriteLine($"Original denominations: {string.Join(", ", denom)}");
+			Console.WriteLine($"Original amount: {amount:N0}");
+			Console.WriteLine();
+			foreach (var key in results.Keys)
+				Console.WriteLine($"{results[key]:N0}....{key:N0}'s");
 		}
 	}
 }
