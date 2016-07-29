@@ -10,7 +10,7 @@ namespace HTMLParsing
 	{
 		#region Properties
 
-		public enum DataTypes { Validated, Text, Numeric, Boolean }
+		public enum DataTypes { Validated, Text, Numeric, Boolean } //care for
 
 		public string InputId { get; private set; }
 		public string ElementId { get; private set; }
@@ -32,7 +32,7 @@ namespace HTMLParsing
 		public bool Enforced { get; private set; }
 
 		// Option list of allowed values for prompt.
-		public List<string> PromptValues { get; set; }
+		public List<string> PromptValues { get; set; } //care for
 
 		#endregion
 
