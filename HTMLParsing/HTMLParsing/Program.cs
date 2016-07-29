@@ -19,14 +19,18 @@ namespace HTMLParsing
 
 			string htmlInput = File.ReadAllText(@"Form.html");
 
-            Console.WriteLine(string.Join(System.Environment.NewLine, PopulatePromptValues(htmlInput, inputs)));
+			PopulatePromptValues(htmlInput, inputs);
+
+			foreach (var input in inputs)
+			{
+				if (input.DataType == Input.DataTypes.Validated)
+					Console.WriteLine(input.PromptValues.Aggregate((x, y) => x + ", " + y));
+			}
 		}
 
-		static List<string> PopulatePromptValues(string htmlInput, List<Input> inputs)
+		static void PopulatePromptValues(string htmlInput, List<Input> inputs)
 		{
-
-            List<string> listRecords = new List<string>();
-
+			HtmlAgilityPack.HtmlNode.ElementsFlags.Remove("option");
             HtmlAgilityPack.HtmlDocument htmlDoc = new HtmlAgilityPack.HtmlDocument();
             htmlDoc.LoadHtml(htmlInput);
 
@@ -35,34 +39,35 @@ namespace HTMLParsing
                 if (input.DataType != Input.DataTypes.Validated)
                     continue;
 
-                /*
+				List<string> listRecords = new List<string>();
+
+				/*
                  * //select[@name='Input_1']
                  * All <select> elements in the context node which have a name attribute equal to InPut_1.
                  */
-                foreach (HtmlAgilityPack.HtmlNode node in htmlDoc.DocumentNode.SelectNodes("//select[@name='Input_1']"))
-                {
-                    string record = string.Empty;
+	            //string pattern = string.Format("//select[@name='{0}']", input.InputId);
+	            string pattern = $"//select[@name='{input.InputId}']";
 
-                    /*
+				foreach (HtmlAgilityPack.HtmlNode node in htmlDoc.DocumentNode.SelectNodes(pattern))
+                {
+	                /*
                      * .//option
                      * All<option> elements one or more levels deep in the current context.
                      * option[@value]
                      * All <option> elements with value attributes, of the current context.
                      */
-                    foreach (HtmlNode node2 in node.SelectNodes(".//option[@value]"))
+
+					foreach (HtmlNode node2 in node.SelectNodes(".//option[@value]"))
                     {
-                        string optionValue = node2.GetAttributeValue("value", "");
-                        record = node2.InnerText;
+                        var record = node2.InnerText;
                         listRecords.Add(record);
                  
                     }
-                    
+	                input.PromptValues = listRecords;
 
                 }
 
             }
-
-            return listRecords;
 
 			// Validated inputs need their PromptValues collection updated from the passed in html.
 			// Need to find the correct select tag by id and parse out the option values to build up the prompt collection.
