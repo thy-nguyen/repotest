@@ -1,0 +1,64 @@
+2016-08-01 15:40:54.795 LNBTests[3189:429736] Xamarin.iOS: Socket error while connecting to IDE on 127.0.0.1:54033: Connection refused
+2016-08-01 15:40:55.088 LNBTests[3189:429723] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-08-01 15:40:55.089 LNBTests[3189:429723] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x79290cd0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-08-01 15:40:55.089 LNBTests[3189:429723] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-08-01 15:40:55.089 LNBTests[3189:429723] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x79290cd0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-08-01 15:40:55.090 LNBTests[3189:429723] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-08-01 15:40:55.090 LNBTests[3189:429723] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x79290cd0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-08-01 15:40:55.090 LNBTests[3189:429723] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-08-01 15:40:55.090 LNBTests[3189:429723] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x79290cd0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-08-01 15:40:55.091 LNBTests[3189:429723] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-08-01 15:40:55.091 LNBTests[3189:429723] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x79290cd0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-08-01 15:40:55.091 LNBTests[3189:429723] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-08-01 15:40:55.091 LNBTests[3189:429723] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x79290cd0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-08-01 15:40:55.092 LNBTests[3189:429723] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-08-01 15:40:55.092 LNBTests[3189:429723] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x79290cd0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-08-01 15:40:55.092 LNBTests[3189:429723] Error loading /System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib:  dlopen(/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib, 262): no suitable image found.  Did find:
+	/System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin/Contents/MacOS/IOHIDLib: mach-o, but not built for iOS simulator
+2016-08-01 15:40:55.092 LNBTests[3189:429723] Cannot find function pointer IOHIDLibFactory for factory 13AA9C44-6F1B-11D4-907C-0005028F18D5 in CFBundle/CFPlugIn 0x79290cd0 </System/Library/Extensions/IOHIDFamily.kext/Contents/PlugIns/IOHIDLib.plugin> (bundle, not loaded)
+2016-08-01 15:40:56.961 LNBTests[3189:429723] [Runner executing:	Run Everything]
+2016-08-01 15:40:56.962 LNBTests[3189:429723] [MonoTouch Version:	9.8.1]
+2016-08-01 15:40:56.962 LNBTests[3189:429723] [Assembly:	Xamarin.iOS.dll (32 bits)]
+2016-08-01 15:40:56.962 LNBTests[3189:429723] [GC:	sgen]
+2016-08-01 15:40:56.963 LNBTests[3189:429723] [iPhone:	iPhone OS v9.3]
+2016-08-01 15:40:56.963 LNBTests[3189:429723] [Device Name:	iPhone Simulator]
+2016-08-01 15:40:56.966 LNBTests[3189:429723] [Device UDID:	FFFFFFFF6CC1FF87C29847AE95191B1458C4D14E]
+2016-08-01 15:40:56.969 LNBTests[3189:429723] [Device Locale:	en_US]
+2016-08-01 15:40:56.977 LNBTests[3189:429723] [Device Date/Time:	8/1/2016 3:40:56 PM]
+2016-08-01 15:40:56.979 LNBTests[3189:429723] [Bundle:	com.cherwell.lnbtests]
+2016-08-01 15:40:56.982 LNBTests[3189:429723] 
+2016-08-01 15:40:56.984 LNBTests[3189:429723] LNBTests.exe
+2016-08-01 15:40:56.985 LNBTests[3189:429723] MyTest
+2016-08-01 15:40:57.003 LNBTests[3189:429723] 	[FAIL] MyTest.Fail : System.ArgumentException : Value does not fall within the expected range.
+2016-08-01 15:40:57.003 LNBTests[3189:429723] 		  at LNBiOS.MoneyUtilities.DetermineLeastNumberOfBills (System.Int32[] denom, Int32 amount) [0x0008c] in /Users/thy.nguyen/Projects/LNBiOS/LNBiOS/MoneyUtilities.cs:39 
+2016-08-01 15:40:57.004 LNBTests[3189:429723] 		  at LNBTests.MyTest.Fail () [0x00018] in /Users/thy.nguyen/Projects/LNBiOS/MyTest.cs:33 
+2016-08-01 15:40:57.004 LNBTests[3189:429723] 		  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2016-08-01 15:40:57.004 LNBTests[3189:429723] 		  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in /Users/builder/data/lanes/3412/3cf8aaed/source/maccore/_build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System.Reflection/MonoMethod.cs:295 
+2016-08-01 15:40:57.006 LNBTests[3189:429723] 	[IGNORED] MyTest.Ignore : another time
+2016-08-01 15:40:57.016 LNBTests[3189:429723] 	[PASS] MyTest.Pass
+2016-08-01 15:40:57.020 LNBTests[3189:429723] MyTest : 35 ms
+2016-08-01 15:40:57.020 LNBTests[3189:429723] LNBTests.exe : 36 ms
+2016-08-01 15:40:57.024 LNBTests[3189:429723] Tests run: 2 Passed: 1 Inconclusive: 0 Failed: 1 Ignored: 1
+2016-08-01 15:41:03.721 LNBTests[3189:429723] [Runner executing:	LNBTests.MyTest.Fail]
+2016-08-01 15:41:03.721 LNBTests[3189:429723] [MonoTouch Version:	9.8.1]
+2016-08-01 15:41:03.721 LNBTests[3189:429723] [Assembly:	Xamarin.iOS.dll (32 bits)]
+2016-08-01 15:41:03.721 LNBTests[3189:429723] [GC:	sgen]
+2016-08-01 15:41:03.722 LNBTests[3189:429723] [iPhone:	iPhone OS v9.3]
+2016-08-01 15:41:03.722 LNBTests[3189:429723] [Device Name:	iPhone Simulator]
+2016-08-01 15:41:03.722 LNBTests[3189:429723] [Device UDID:	FFFFFFFF6CC1FF87C29847AE95191B1458C4D14E]
+2016-08-01 15:41:03.722 LNBTests[3189:429723] [Device Locale:	en_US]
+2016-08-01 15:41:03.722 LNBTests[3189:429723] [Device Date/Time:	8/1/2016 3:41:03 PM]
+2016-08-01 15:41:03.722 LNBTests[3189:429723] [Bundle:	com.cherwell.lnbtests]
+2016-08-01 15:41:03.723 LNBTests[3189:429723] 	[FAIL] MyTest.Fail : System.ArgumentException : Value does not fall within the expected range.
+2016-08-01 15:41:03.723 LNBTests[3189:429723] 		  at LNBiOS.MoneyUtilities.DetermineLeastNumberOfBills (System.Int32[] denom, Int32 amount) [0x0008c] in /Users/thy.nguyen/Projects/LNBiOS/LNBiOS/MoneyUtilities.cs:39 
+2016-08-01 15:41:03.723 LNBTests[3189:429723] 		  at LNBTests.MyTest.Fail () [0x00018] in /Users/thy.nguyen/Projects/LNBiOS/MyTest.cs:33 
+2016-08-01 15:41:03.723 LNBTests[3189:429723] 		  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2016-08-01 15:41:03.723 LNBTests[3189:429723] 		  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00038] in /Users/builder/data/lanes/3412/3cf8aaed/source/maccore/_build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System.Reflection/MonoMethod.cs:295 
+2016-08-01 15:41:03.723 LNBTests[3189:429723] Tests run: 1 Passed: 0 Inconclusive: 0 Failed: 1 Ignored: 0

@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="LNBiOS/LNBiOS.csproj">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="LNBiOS/MoneyUtilities.cs" Line="30" Column="24" />
+      <File FileName="MyTest.cs" Line="39" Column="4" />
+      <File FileName="LNBiOS/ViewController.cs" Line="7" Column="56" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LNBiOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.68624F34-3CEB-47F0-8FD0-0508B6C41DFC" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="LNBiOS/MoneyUtilities.cs" line="27" offsetX="429" offsetY="390" expression="currDenom" liveUpdate="False" />
+    <Watch file="LNBiOS/MoneyUtilities.cs" line="30" offsetX="429" offsetY="418" expression="numOfBills" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
