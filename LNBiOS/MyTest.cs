@@ -1,6 +1,6 @@
 ﻿
 using System;
-using LNBiOS;
+using Shared;
 using NUnit.Framework;
 
 namespace LNBTests
@@ -13,7 +13,8 @@ namespace LNBTests
 		{
 			int[] denom = { 500, 100, 50, 10, 5, 2, 1, 1000 };
 			int amount = 0;
-			var results = MoneyUtilities.DetermineLeastNumberOfBills(denom, amount);
+			MoneyUtilities moneyUtilities = new MoneyUtilities();
+			var results = moneyUtilities.DetermineLeastNumberOfBills(denom, amount);
 
 			Assert.IsNotNull(results);
 			Assert.AreEqual(0, results.Count);
@@ -26,7 +27,8 @@ namespace LNBTests
 			int[] denom = { 500, 100, 50, 10, 5, 2, 1000 };
 			int amount = 38;
 
-			var results = MoneyUtilities.DetermineLeastNumberOfBills(denom, amount);
+			MoneyUtilities moneyUtilities = new MoneyUtilities();
+			var results = moneyUtilities.DetermineLeastNumberOfBills(denom, amount);
 			Assert.AreEqual(0, results.Count);
 			//Assert.False(true);
 		}

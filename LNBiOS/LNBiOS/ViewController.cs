@@ -1,6 +1,6 @@
 ﻿using System;
-
 using UIKit;
+using Shared;
 
 namespace LNBiOS
 {
@@ -27,7 +27,8 @@ namespace LNBiOS
 		{
 			int[] denom = { 500, 100, 50, 10, 5, 2, 1, 1000 };
 			int amount = Convert.ToInt32(txtAmount.Text);
-			var results = MoneyUtilities.DetermineLeastNumberOfBills(denom, amount);
+			MoneyUtilities moneyUtilities = new MoneyUtilities();
+			var results = moneyUtilities.DetermineLeastNumberOfBills(denom, amount);
 
 			foreach (var key in results.Keys)
 				txtResults.Text += $"{results[key]:N0}....{key:N0}'s" + "\n";

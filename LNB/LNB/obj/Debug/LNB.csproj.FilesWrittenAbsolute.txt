@@ -1,0 +1,6 @@
+/Users/thy.nguyen/RepoTest/LNB/LNB/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/Users/thy.nguyen/RepoTest/LNB/LNB/bin/Debug/LNB.exe.config
+/Users/thy.nguyen/RepoTest/LNB/LNB/bin/Debug/LNB.exe.mdb
+/Users/thy.nguyen/RepoTest/LNB/LNB/bin/Debug/LNB.exe
+/Users/thy.nguyen/RepoTest/LNB/LNB/obj/Debug/LNB.exe
+/Users/thy.nguyen/RepoTest/LNB/LNB/obj/Debug/LNB.exe.mdb

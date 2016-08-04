@@ -1,0 +1,4 @@
+LNBAndroid.MainActivity, LNBAndroid;md53bbc3bf508a398bf7d1fb3e3396fad67.MainActivity
+LNBAndroid.MainActivity, LNBAndroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53bbc3bf508a398bf7d1fb3e3396fad67.MainActivity
+LNBAndroid.MainActivity;md53bbc3bf508a398bf7d1fb3e3396fad67.MainActivity
+lnbandroid.MainActivity;md53bbc3bf508a398bf7d1fb3e3396fad67.MainActivity

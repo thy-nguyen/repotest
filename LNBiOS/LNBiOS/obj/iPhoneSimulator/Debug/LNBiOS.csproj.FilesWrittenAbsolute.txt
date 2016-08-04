@@ -16,3 +16,12 @@
 /Users/thy.nguyen/Projects/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/LNBiOS.exe
 /Users/thy.nguyen/Projects/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/LNBiOS.exe.mdb
 /Users/thy.nguyen/Projects/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug/nunit.framework.dll
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug/LNBiOS.exe.mdb
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug/LNBiOS.exe
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/LNBiOS.exe
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/LNBiOS.exe.mdb
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug/nunit.framework.dll
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug/Shared.dll
+/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug/Shared.dll.mdb

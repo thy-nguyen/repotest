@@ -1,10 +1,10 @@
 # Version: 9.8.1.4 (c7sr0: 3cf8aae)
-# [first argument, ignore] # /Users/thy.nguyen/Projects/LNBiOS/LNBiOS/mtouch.exe
+# [first argument, ignore] # /Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/9.8.1.4/bin/mtouch \
 	--cache \
-	/Users/thy.nguyen/Projects/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Users/thy.nguyen/Projects/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug/LNBiOS.app \
+	/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug/LNBiOS.app \
 	--executable \
 	LNBiOS \
 	--fastdev \
@@ -21,7 +21,7 @@
 	--tls-provider=default \
 	--abi=i386 \
 	--symbollist \
-	/Users/thy.nguyen/Projects/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
+	/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -30,11 +30,13 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
-	/Users/thy.nguyen/Projects/LNBiOS/packages/NUnit.3.4.1/lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac+MonoAndroid10+MonoTouch10+Xamarin.iOS10/nunit.framework.dll \
+	/Users/thy.nguyen/RepoTest/LNBiOS/packages/NUnit.3.4.1/lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac+MonoAndroid10+MonoTouch10+Xamarin.iOS10/nunit.framework.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/MonoTouch.NUnitLite.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Users/thy.nguyen/RepoTest/LNBiOS/Shared/bin/Debug/Shared.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
@@ -270,7 +272,9 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	/Users/thy.nguyen/Projects/LNBiOS/packages/NUnit.3.4.1/lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac+MonoAndroid10+MonoTouch10+Xamarin.iOS10/nunit.framework.dll \
+	/Users/thy.nguyen/RepoTest/LNBiOS/packages/NUnit.3.4.1/lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac+MonoAndroid10+MonoTouch10+Xamarin.iOS10/nunit.framework.dll \
+	-r \
+	/Users/thy.nguyen/RepoTest/LNBiOS/Shared/bin/Debug/Shared.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/thy.nguyen/Projects/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug//LNBiOS.exe \
+	/Users/thy.nguyen/RepoTest/LNBiOS/LNBiOS/bin/iPhoneSimulator/Debug//LNBiOS.exe \

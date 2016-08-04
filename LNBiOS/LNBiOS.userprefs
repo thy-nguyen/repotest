@@ -1,18 +1,21 @@
-﻿<Properties StartupItem="LNBiOS/LNBiOS.csproj">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="LNBAndroid/LNBAndroid.csproj">
+  <MonoDevelop.Ide.ItemProperties.LNBAndroid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LNBiOS/ViewController.cs">
     <Files>
-      <File FileName="LNBiOS/MoneyUtilities.cs" Line="30" Column="24" />
-      <File FileName="MyTest.cs" Line="39" Column="4" />
-      <File FileName="LNBiOS/ViewController.cs" Line="7" Column="56" />
+      <File FileName="Shared/MoneyUtilities.cs" Line="8" Column="10" />
+      <File FileName="LNBiOS/ViewController.cs" Line="30" Column="57" />
+      <File FileName="LNBiOS/Main.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.LNBiOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.68624F34-3CEB-47F0-8FD0-0508B6C41DFC" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="LNBiOS/MoneyUtilities.cs" line="27" offsetX="429" offsetY="390" expression="currDenom" liveUpdate="False" />
     <Watch file="LNBiOS/MoneyUtilities.cs" line="30" offsetX="429" offsetY="418" expression="numOfBills" liveUpdate="False" />
+    <Watch file="Shared/MoneyUtilities.cs" line="15" offsetX="429" offsetY="210" expression="currDenom" liveUpdate="False" />
+    <Watch file="Shared/MoneyUtilities.cs" line="15" offsetX="585" offsetY="211" expression="sortedDenoms" liveUpdate="False" />
+    <Watch file="Shared/MoneyUtilities.cs" line="17" offsetX="804" offsetY="211" expression="amount" liveUpdate="False" />
+    <Watch file="Shared/MoneyUtilities.cs" line="17" offsetX="943" offsetY="213" expression="numOfBills" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
