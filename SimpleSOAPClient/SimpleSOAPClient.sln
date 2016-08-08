@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSOAPClient", "SimpleSOAPClient\SimpleSOAPClient.csproj", "{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}.Release|iPhone.ActiveCfg = Release|iPhone
+		{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}.Release|iPhone.Build.0 = Release|iPhone
+		{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{AE879B7E-A3F9-4055-97E9-2DD20EC8B4D1}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
