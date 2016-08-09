@@ -122,6 +122,7 @@
     <Compile Include="SOAPParam.cs" />
     <Compile Include="SOAPRequest.cs" />
     <Compile Include="ItemElements.cs" />
+    <Compile Include="TableSource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

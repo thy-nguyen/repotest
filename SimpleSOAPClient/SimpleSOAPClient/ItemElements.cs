@@ -15,6 +15,7 @@ namespace SimpleSOAPClient
 			ItemImageId = itemImageId;
 			BusObDescription = busObDescription;
 		}
+
 	}
 }
 
