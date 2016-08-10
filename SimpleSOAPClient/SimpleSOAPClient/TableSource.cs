@@ -21,14 +21,25 @@ namespace SimpleSOAPClient
 		{
 			UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifier);
 			if (cell == null)
-				cell = new UITableViewCell(UITableViewCellStyle.Default, cellIdentifier);
+				cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifier);
 			cell.TextLabel.Text = tableItems[indexPath.Row].ItemDisplayText;
+			cell.DetailTextLabel.Text = tableItems[indexPath.Row].BusObDescription;
 			return cell;
 		}
 
 		public override nint RowsInSection(UITableView tableview, nint section)
 		{
 			return tableItems.Count;
+		}
+
+		async public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+		{
+			//base.RowSelected(tableView, indexPath);
+			CherwellServiceAPI api = new CherwellServiceAPI();
+			await api.getItemList(tableItems[indexPath.Row].ItemType, tableItems[indexPath.Row].ItemId, "", false);
+			new UIAlertView("Alert", tableItems[indexPath.Row].Cargo, null, "OK", null).Show();
+
+			tableView.DeselectRow(indexPath, true);
 		}
 
 	}

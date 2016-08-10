@@ -123,6 +123,11 @@
     <Compile Include="SOAPRequest.cs" />
     <Compile Include="ItemElements.cs" />
     <Compile Include="TableSource.cs" />
+    <Compile Include="CherwellServiceAPI.cs" />
+    <Compile Include="ListItemViewController.cs" />
+    <Compile Include="ListItemViewController.designer.cs">
+      <DependentUpon>ListItemViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
