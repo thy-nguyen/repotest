@@ -131,6 +131,10 @@
     <Compile Include="ItemListTableSource.cs" />
     <Compile Include="ItemListItem.cs" />
     <Compile Include="ItemListItemEventArgs.cs" />
+    <Compile Include="QueryViewController.cs" />
+    <Compile Include="QueryViewController&#x9;.designer_1.cs">
+      <DependentUpon>QueryViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

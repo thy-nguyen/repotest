@@ -33,7 +33,7 @@ namespace SimpleSOAPClient
 
 			((BusinessObjectTableSource)table.Source).TheStinkingRowWasSelected += (sender, e) => {
 				BusinessObjectItem businessObjectItem = ((BusinessObjectItemEventArgs)e).Item;
-				ItemListItem itemListItem = new ItemListItem(businessObjectItem.ItemType, businessObjectItem.ItemId, "", "");
+				ItemListItem itemListItem = new ItemListItem(businessObjectItem.ItemType, businessObjectItem.ItemId, "", "", "Folder");
 				ItemListViewController vc = new ItemListViewController(itemListItem);
 				NavigationController.PushViewController(vc, true);
 			};

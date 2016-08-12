@@ -68,7 +68,7 @@ namespace SimpleSOAPClient
 				var displayTextElement = element.Element("DisplayText").Value;
 				var displayDescription = element.Element("DisplayDescription").Value;
 				var displayImageId = element.Element("DisplayImageId").Value;
-				var itemElementsObject = new ItemListItem(defTypeAttribute, itemIdAttrivute, currentLocationAttribute, displayTextElement);
+				var itemElementsObject = new ItemListItem(defTypeAttribute, itemIdAttrivute, currentLocationAttribute, displayTextElement, itemTypeAttribute);
 				itemElements.Add(itemElementsObject);
 			}
 

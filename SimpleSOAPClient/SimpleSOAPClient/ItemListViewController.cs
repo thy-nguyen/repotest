@@ -40,8 +40,16 @@ namespace SimpleSOAPClient
 			((ItemListTableSource)table.Source).TheStinkingRowWasSelected += (sender, e) =>
 			{
 				ItemListItem item = ((ItemListItemEventArgs)e).Item;
-				ItemListViewController vc = new ItemListViewController(item);
-				NavigationController.PushViewController(vc, true);
+				if (item.ItemType == "Folder")
+				{
+					ItemListViewController vc = new ItemListViewController(item);
+					NavigationController.PushViewController(vc, true);
+				}
+				else if (item.ItemType == "StoredQueryDef")
+				{
+					
+				}
+
 			};
 
 			View.AddSubview(table);
