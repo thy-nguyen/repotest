@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace SimpleSOAPClient
 {
-	public partial class ViewController : UIViewController
+	public partial class BusinessObjectViewController : UIViewController
 	{
-		protected ViewController(IntPtr handle) : base(handle)
+		protected BusinessObjectViewController(IntPtr handle) : base(handle)
 		{
 			// Note: this .ctor should not contain any initialization logic.
 		}
@@ -21,19 +21,20 @@ namespace SimpleSOAPClient
 			CherwellServiceAPI api = new CherwellServiceAPI();
 			await api.getLogin();
 
-			List<ItemElements> itemElements = new List<ItemElements>();
+			List<BusinessObjectItem> itemElements = new List<BusinessObjectItem>();
 			itemElements =  await api.getTabBarOptions();
 
 			UITableView table;
 			table = new UITableView
 			{
 				Frame = new CoreGraphics.CGRect(0, 30, View.Bounds.Width, View.Bounds.Height - 30),
-				Source = new TableSource(itemElements) //need a foreach to go through itemElements
+				Source = new BusinessObjectTableSource(itemElements) //need a foreach to go through itemElements
 			};
 
-			((TableSource)table.Source).TheStinkingRowWasSelected += (sender, e) => {
-				ItemElements item = ((ItemEventArgs)e).ItemElement;
-				GetListItemVC vc = new GetListItemVC(item);
+			((BusinessObjectTableSource)table.Source).TheStinkingRowWasSelected += (sender, e) => {
+				BusinessObjectItem businessObjectItem = ((BusinessObjectItemEventArgs)e).Item;
+				ItemListItem itemListItem = new ItemListItem(businessObjectItem.ItemType, businessObjectItem.ItemId, "", "");
+				ItemListViewController vc = new ItemListViewController(itemListItem);
 				NavigationController.PushViewController(vc, true);
 			};
 

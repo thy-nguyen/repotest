@@ -114,22 +114,23 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="BusinessObjectViewController.cs" />
+    <Compile Include="BusinessObjectViewController.designer.cs">
+      <DependentUpon>BusinessObjectViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="SOAPParam.cs" />
     <Compile Include="SOAPRequest.cs" />
-    <Compile Include="ItemElements.cs" />
-    <Compile Include="TableSource.cs" />
+    <Compile Include="BusinessObjectItem.cs" />
+    <Compile Include="BusinessObjectTableSource.cs" />
     <Compile Include="CherwellServiceAPI.cs" />
-    <Compile Include="GetListItemVC&#x9;.cs" />
-    <Compile Include="GetListItemVC&#x9;.designer.cs">
-      <DependentUpon>GetListItemVC	.cs</DependentUpon>
+    <Compile Include="ItemListViewController.cs" />
+    <Compile Include="ItemListViewController&#x9;.designer.cs">
+      <DependentUpon>ItemListViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ItemEventArgs.cs" />
-    <Compile Include="ListViewSource.cs" />
-    <Compile Include="GetListItemElements.cs" />
+    <Compile Include="BusinessObjectItemEventArgs.cs" />
+    <Compile Include="ItemListTableSource.cs" />
+    <Compile Include="ItemListItem.cs" />
+    <Compile Include="ItemListItemEventArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -11,8 +11,8 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("GetListItemVC\t")]
+    partial class ItemListViewController
     {
         void ReleaseDesignerOutlets ()
         {

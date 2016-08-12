@@ -34,7 +34,7 @@ namespace SimpleSOAPClient
 			return response;
 		}
 
-		async public Task<List<GetListItemElements>> getItemList(string objectType, string objectNameorId, string currentLocation, bool forceRefresh)
+		async public Task<List<ItemListItem>> getItemList(string objectType, string objectNameorId, string currentLocation, bool forceRefresh)
 		{
 			SOAPRequest request = new SOAPRequest(serviceURL, "GetItemList");
 			request.AddParam(new SOAPParam("objectType", objectType));
@@ -54,7 +54,7 @@ namespace SimpleSOAPClient
 			XDocument doc = XDocument.Parse(getItemListResult);
 			var elements = doc.Root.Elements();
 
-			List<GetListItemElements> itemElements = new List<GetListItemElements>();
+			List<ItemListItem> itemElements = new List<ItemListItem>();
 			foreach (var element in elements)
 			{
 				//getting the attributes
@@ -68,14 +68,14 @@ namespace SimpleSOAPClient
 				var displayTextElement = element.Element("DisplayText").Value;
 				var displayDescription = element.Element("DisplayDescription").Value;
 				var displayImageId = element.Element("DisplayImageId").Value;
-				var itemElementsObject = new GetListItemElements(defTypeAttribute, itemIdAttrivute, currentLocationAttribute, displayTextElement);
+				var itemElementsObject = new ItemListItem(defTypeAttribute, itemIdAttrivute, currentLocationAttribute, displayTextElement);
 				itemElements.Add(itemElementsObject);
 			}
 
 			return itemElements;
 		}
 
-		async public Task<List<ItemElements>> getTabBarOptions()
+		async public Task<List<BusinessObjectItem>> getTabBarOptions()
 		{
 			SOAPRequest request = new SOAPRequest(serviceURL, "GetTabBarOptions");
 			//request.AddParam(new SOAPParam("iPhoneImages", false));
@@ -92,7 +92,7 @@ namespace SimpleSOAPClient
 			XDocument doc = XDocument.Parse(getTabBarOptionsResults);
 			var elements = doc.Root.Elements();
 
-			List<ItemElements> itemElements = new List<ItemElements>();
+			List<BusinessObjectItem> itemElements = new List<BusinessObjectItem>();
 
 			foreach (var element in elements)
 			{
@@ -102,7 +102,7 @@ namespace SimpleSOAPClient
 				var itemDisplayTextElement = element.Element("ItemDisplayText").Value;
 				var itemImageIdElement = element.Element("ItemImageId").Value;
 				var busObDescriptionElement = element.Element("BusObDescription").Value;
-				var itemElementsObject = new ItemElements (itemTypeAttribute, itemIdAttribute, cargoElement, itemDisplayTextElement, itemImageIdElement, busObDescriptionElement);
+				var itemElementsObject = new BusinessObjectItem (itemTypeAttribute, itemIdAttribute, cargoElement, itemDisplayTextElement, itemImageIdElement, busObDescriptionElement);
 				itemElements.Add(itemElementsObject);
 
 			}

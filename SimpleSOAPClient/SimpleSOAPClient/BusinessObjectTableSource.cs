@@ -5,15 +5,15 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-	public class TableSource : UITableViewSource
+	public class BusinessObjectTableSource : UITableViewSource
 	{
 		//string[] tableItems; //change to List instead of string
-		List<ItemElements> tableItems = new List<ItemElements>();
+		List<BusinessObjectItem> tableItems = new List<BusinessObjectItem>();
 
 		string cellIdentifier = "TableCell";
 		public EventHandler TheStinkingRowWasSelected;
 
-		public TableSource(List<ItemElements> items) //change to List instead of string
+		public BusinessObjectTableSource(List<BusinessObjectItem> items) //change to List instead of string
 		{
 			tableItems = items;
 		}
@@ -42,15 +42,15 @@ namespace SimpleSOAPClient
 			//await api.getItemList(tableItems[indexPath.Row].ItemType, tableItems[indexPath.Row].ItemId, "", false);
 
 			//pass value to Cargo
-			ItemElements item = new ItemElements();
+			BusinessObjectItem item = new BusinessObjectItem();
 			item.Cargo = tableItems[indexPath.Row].Cargo;
 			//new UIAlertView("Alert", tableItems[indexPath.Row].Cargo, null, "OK", null).Show();
-			new UIAlertView("Alert", item.Cargo, null, "OK", null).Show();
+			//new UIAlertView("Alert", item.Cargo, null, "OK", null).Show();
 
 			tableView.DeselectRow(indexPath, true);
 
 
-			TheStinkingRowWasSelected(this, new ItemEventArgs(tableItems[indexPath.Row]));
+			TheStinkingRowWasSelected(this, new BusinessObjectItemEventArgs(tableItems[indexPath.Row]));
 
 
 			//GetListItemVC controller = this.Storyboard.InstantiateViewController("GetListItemVC") as GetListItemVC;

@@ -5,15 +5,15 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-	public class ListViewSource : UITableViewSource
+	public class ItemListTableSource : UITableViewSource
 	{
 		//string[] tableItems; //change to List instead of string
-		List<GetListItemElements> tableItems = new List<GetListItemElements>();
+		List<ItemListItem> tableItems = new List<ItemListItem>();
 
 		string cellIdentifier = "TableCell";
 		public EventHandler TheStinkingRowWasSelected;
 
-		public ListViewSource(List<GetListItemElements> items)
+		public ItemListTableSource(List<ItemListItem> items)
 		{
 			tableItems = items;
 		}
@@ -50,7 +50,7 @@ namespace SimpleSOAPClient
 			//tableView.DeselectRow(indexPath, true);
 
 
-			//TheStinkingRowWasSelected(this, new ItemEventArgs(tableItems[indexPath.Row]));
+			TheStinkingRowWasSelected(this, new ItemListItemEventArgs(tableItems[indexPath.Row]));
 
 
 			//GetListItemVC controller = this.Storyboard.InstantiateViewController("GetListItemVC") as GetListItemVC;
