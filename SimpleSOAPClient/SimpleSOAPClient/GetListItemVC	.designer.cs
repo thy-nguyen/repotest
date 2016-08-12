@@ -11,19 +11,11 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-    [Register ("ListItemViewController")]
-    partial class ListItemViewController
+    [Register ("GetListItemVC\t")]
+    partial class GetListItemVC
     {
-        //[Outlet]
-        //[GeneratedCode ("iOS Designer", "1.0")]
-        //UIKit.UIView ListItemViewController { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            //if (ListItemViewController != null) {
-            //    ListItemViewController.Dispose ();
-            //    ListItemViewController = null;
-            //}
         }
     }
 }

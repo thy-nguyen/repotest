@@ -13,16 +13,16 @@
                         <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="127" kind="relationship" relationship="rootViewController" id="126"/>
+                        <segue id="763" destination="127" kind="relationship" relationship="rootViewController"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="129" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1072" y="54"/>
+            <point key="canvasLocation" x="-896" y="97"/>
         </scene>
         <scene sceneID="130">
             <objects>
-                <viewController id="127" sceneMemberID="viewController" customClass="ViewController">
+                <viewController id="127" sceneMemberID="viewController" customClass="ViewController" storyboardIdentifier="ViewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="122"/>
                         <viewControllerLayoutGuide type="bottom" id="123"/>
@@ -36,27 +36,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="133" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="85"/>
+            <point key="canvasLocation" x="83" y="96"/>
         </scene>
-        <scene sceneID="140">
+        <scene sceneID="646">
             <objects>
-                <viewController id="141" sceneMemberID="viewController" customClass="ListItemViewController">
+                <viewController id="647" sceneMemberID="viewController" customClass="GetListItemVC ">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="138"/>
-                        <viewControllerLayoutGuide type="bottom" id="139"/>
+                        <viewControllerLayoutGuide type="top" id="644"/>
+                        <viewControllerLayoutGuide type="bottom" id="645"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="142">
+                    <view key="view" contentMode="scaleToFill" id="648">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="1" green="0" blue="1" alpha="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="ListItemViewController" destination="142" id="name-outlet-142"/>
-                    </connections>
+                    <navigationItem title="Title" id="696" key="navigationItem"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="143" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="649" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="-6"/>
+            <point key="canvasLocation" x="931" y="76"/>
         </scene>
     </scenes>
 </document>

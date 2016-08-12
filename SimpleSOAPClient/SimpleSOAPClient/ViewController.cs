@@ -21,7 +21,6 @@ namespace SimpleSOAPClient
 			CherwellServiceAPI api = new CherwellServiceAPI();
 			await api.getLogin();
 
-			// Perform any additional setup after loading the view, typically from a nib.
 			List<ItemElements> itemElements = new List<ItemElements>();
 			itemElements =  await api.getTabBarOptions();
 
@@ -32,8 +31,17 @@ namespace SimpleSOAPClient
 				Source = new TableSource(itemElements) //need a foreach to go through itemElements
 			};
 
+			((TableSource)table.Source).TheStinkingRowWasSelected += (sender, e) => {
+				ItemElements item = ((ItemEventArgs)e).ItemElement;
+				GetListItemVC vc = new GetListItemVC(item);
+				NavigationController.PushViewController(vc, true);
+			};
+
+
 			View.AddSubview(table);
+
 		}
+
 
 		public override void DidReceiveMemoryWarning()
 		{

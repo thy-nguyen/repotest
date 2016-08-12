@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
@@ -124,10 +123,13 @@
     <Compile Include="ItemElements.cs" />
     <Compile Include="TableSource.cs" />
     <Compile Include="CherwellServiceAPI.cs" />
-    <Compile Include="ListItemViewController.cs" />
-    <Compile Include="ListItemViewController.designer.cs">
-      <DependentUpon>ListItemViewController.cs</DependentUpon>
+    <Compile Include="GetListItemVC&#x9;.cs" />
+    <Compile Include="GetListItemVC&#x9;.designer.cs">
+      <DependentUpon>GetListItemVC	.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemEventArgs.cs" />
+    <Compile Include="ListViewSource.cs" />
+    <Compile Include="GetListItemElements.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

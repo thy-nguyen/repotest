@@ -5,15 +5,15 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-	public class TableSource : UITableViewSource
+	public class ListViewSource : UITableViewSource
 	{
 		//string[] tableItems; //change to List instead of string
-		List<ItemElements> tableItems = new List<ItemElements>();
+		List<GetListItemElements> tableItems = new List<GetListItemElements>();
 
 		string cellIdentifier = "TableCell";
 		public EventHandler TheStinkingRowWasSelected;
 
-		public TableSource(List<ItemElements> items) //change to List instead of string
+		public ListViewSource(List<GetListItemElements> items)
 		{
 			tableItems = items;
 		}
@@ -23,8 +23,8 @@ namespace SimpleSOAPClient
 			UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifier);
 			if (cell == null)
 				cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifier);
-			cell.TextLabel.Text = tableItems[indexPath.Row].ItemDisplayText;
-			cell.DetailTextLabel.Text = tableItems[indexPath.Row].BusObDescription;
+			cell.TextLabel.Text = tableItems[indexPath.Row].DisplayText;
+			cell.DetailTextLabel.Text = "";
 			return cell;
 		}
 
@@ -42,15 +42,15 @@ namespace SimpleSOAPClient
 			//await api.getItemList(tableItems[indexPath.Row].ItemType, tableItems[indexPath.Row].ItemId, "", false);
 
 			//pass value to Cargo
-			ItemElements item = new ItemElements();
-			item.Cargo = tableItems[indexPath.Row].Cargo;
+			//ItemElements item = new ItemElements();
+			//item.Cargo = tableItems[indexPath.Row].Cargo;
 			//new UIAlertView("Alert", tableItems[indexPath.Row].Cargo, null, "OK", null).Show();
-			new UIAlertView("Alert", item.Cargo, null, "OK", null).Show();
+			//new UIAlertView("Alert", item.Cargo, null, "OK", null).Show();
 
-			tableView.DeselectRow(indexPath, true);
+			//tableView.DeselectRow(indexPath, true);
 
 
-			TheStinkingRowWasSelected(this, new ItemEventArgs(tableItems[indexPath.Row]));
+			//TheStinkingRowWasSelected(this, new ItemEventArgs(tableItems[indexPath.Row]));
 
 
 			//GetListItemVC controller = this.Storyboard.InstantiateViewController("GetListItemVC") as GetListItemVC;

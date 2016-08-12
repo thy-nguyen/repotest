@@ -49,7 +49,7 @@ namespace SimpleSOAPClient
 			xw.WriteStartElement(MethodName, cherwellNS);
 			foreach (SOAPParam param in m_params)
 			{
-				//xw.WriteStartElement(param.Name); //figure why this is a problem <localname 
+				//xw.WriteStartElement(param.Name);
 				xw.WriteElementString(param.Name, param.GetValueAsString());
 				//xw.WriteEndElement();
 
@@ -61,7 +61,7 @@ namespace SimpleSOAPClient
 			xw.Close();
 			ms.Close();
 
-			string test = ms.ToString();
+			//string test = ms.ToString();
 			byte[] bodyData = ms.ToArray();
 
 			WebRequest request = WebRequest.Create(ServerUrl);

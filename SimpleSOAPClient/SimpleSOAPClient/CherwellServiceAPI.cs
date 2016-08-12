@@ -34,7 +34,7 @@ namespace SimpleSOAPClient
 			return response;
 		}
 
-		async public Task<List<ItemElements>> getItemList(string objectType, string objectNameorId, string currentLocation, bool forceRefresh)
+		async public Task<List<GetListItemElements>> getItemList(string objectType, string objectNameorId, string currentLocation, bool forceRefresh)
 		{
 			SOAPRequest request = new SOAPRequest(serviceURL, "GetItemList");
 			request.AddParam(new SOAPParam("objectType", objectType));
@@ -43,7 +43,7 @@ namespace SimpleSOAPClient
 			request.AddParam(new SOAPParam("forceRefresh", forceRefresh));
 			string response = await request.GetResponse();
 
-			string str = "GetItemListResponse";
+			string str = "GetItemListResult";
 			int startPos = response.IndexOf("<" + str + ">", StringComparison.InvariantCulture);
 			startPos = startPos + str.Length + 2;
 			int endPos = response.IndexOf("</" + str + ">", StringComparison.InvariantCulture);
@@ -54,7 +54,7 @@ namespace SimpleSOAPClient
 			XDocument doc = XDocument.Parse(getItemListResult);
 			var elements = doc.Root.Elements();
 
-			List<ItemElements> itemElements = new List<ItemElements>();
+			List<GetListItemElements> itemElements = new List<GetListItemElements>();
 			foreach (var element in elements)
 			{
 				//getting the attributes
@@ -68,7 +68,8 @@ namespace SimpleSOAPClient
 				var displayTextElement = element.Element("DisplayText").Value;
 				var displayDescription = element.Element("DisplayDescription").Value;
 				var displayImageId = element.Element("DisplayImageId").Value;
-
+				var itemElementsObject = new GetListItemElements(defTypeAttribute, itemIdAttrivute, currentLocationAttribute, displayTextElement);
+				itemElements.Add(itemElementsObject);
 			}
 
 			return itemElements;
@@ -101,7 +102,7 @@ namespace SimpleSOAPClient
 				var itemDisplayTextElement = element.Element("ItemDisplayText").Value;
 				var itemImageIdElement = element.Element("ItemImageId").Value;
 				var busObDescriptionElement = element.Element("BusObDescription").Value;
-				var itemElementsObject = new ItemElements(itemTypeAttribute, itemIdAttribute, cargoElement, itemDisplayTextElement, itemImageIdElement, busObDescriptionElement);
+				var itemElementsObject = new ItemElements (itemTypeAttribute, itemIdAttribute, cargoElement, itemDisplayTextElement, itemImageIdElement, busObDescriptionElement);
 				itemElements.Add(itemElementsObject);
 
 			}
