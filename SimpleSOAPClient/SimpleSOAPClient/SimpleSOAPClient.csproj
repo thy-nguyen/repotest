@@ -114,26 +114,38 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="BusinessObjectViewController.cs" />
-    <Compile Include="BusinessObjectViewController.designer.cs">
-      <DependentUpon>BusinessObjectViewController.cs</DependentUpon>
+    <Compile Include="AssociatedItemViewController.cs" />
+    <Compile Include="AssociatedItemViewController.designer.cs">
+      <DependentUpon>AssociatedItemViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="SOAPParam.cs" />
     <Compile Include="SOAPRequest.cs" />
-    <Compile Include="BusinessObjectItem.cs" />
-    <Compile Include="BusinessObjectTableSource.cs" />
+    <Compile Include="AssociatedItem.cs" />
+    <Compile Include="AssociatedItemTableSource.cs" />
     <Compile Include="CherwellServiceAPI.cs" />
     <Compile Include="ItemListViewController.cs" />
-    <Compile Include="ItemListViewController&#x9;.designer.cs">
+    <Compile Include="ItemListViewController.designer.cs">
       <DependentUpon>ItemListViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="BusinessObjectItemEventArgs.cs" />
+    <Compile Include="AssociatedItemEventArgs.cs" />
     <Compile Include="ItemListTableSource.cs" />
     <Compile Include="ItemListItem.cs" />
     <Compile Include="ItemListItemEventArgs.cs" />
     <Compile Include="QueryViewController.cs" />
-    <Compile Include="QueryViewController&#x9;.designer_1.cs">
+    <Compile Include="QueryViewController.designer.cs">
       <DependentUpon>QueryViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryResultItem.cs" />
+    <Compile Include="QueryViewTableSource.cs" />
+    <Compile Include="QueryResultItemEventArgs.cs" />
+    <Compile Include="BusinessObjectViewController.cs" />
+    <Compile Include="BusinessObjectViewController.designer.cs">
+      <DependentUpon>BusinessObjectViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObject.cs" />
+    <Compile Include="BusinessObjectView.cs" />
+    <Compile Include="BusinessObjectView.designer.cs">
+      <DependentUpon>BusinessObjectView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

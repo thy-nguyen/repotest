@@ -11,8 +11,8 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-    [Register ("BusinessObjectWebViewController")]
-    partial class BusinessObjectViewController
+    [Register ("ViewController")]
+    partial class AssociatedItemViewController
     {
         void ReleaseDesignerOutlets ()
         {

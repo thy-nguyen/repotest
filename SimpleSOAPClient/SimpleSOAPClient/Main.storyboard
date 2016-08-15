@@ -58,7 +58,7 @@
         </scene>
         <scene sceneID="801">
             <objects>
-                <viewController id="802" sceneMemberID="viewController" customClass="QueryViewController	">
+                <viewController id="802" sceneMemberID="viewController" customClass="QueryViewController ">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="799"/>
                         <viewControllerLayoutGuide type="bottom" id="800"/>
@@ -72,6 +72,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="804" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1699" y="77"/>
+        </scene>
+        <scene sceneID="861">
+            <objects>
+                <viewController id="862" sceneMemberID="viewController" customClass="BusinessObjectViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="859"/>
+                        <viewControllerLayoutGuide type="bottom" id="860"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="863" customClass="BusinessObjectView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="884" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="30" y="105" width="160" height="240"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="StupidAssWebView" destination="884" id="name-outlet-884"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="864" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364" y="99"/>
         </scene>
     </scenes>
 </document>

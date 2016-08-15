@@ -5,14 +5,14 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-	public class ItemListTableSource : UITableViewSource
+	public class QueryViewTableSource : UITableViewSource
 	{
-		List<ItemListItem> tableItems = new List<ItemListItem>();
+		List<QueryResultItem> tableItems = new List<QueryResultItem>();
 
 		string cellIdentifier = "TableCell";
 		public EventHandler TheStinkingRowWasSelected;
 
-		public ItemListTableSource(List<ItemListItem> items)
+		public QueryViewTableSource(List<QueryResultItem> items)
 		{
 			tableItems = items;
 		}
@@ -22,8 +22,8 @@ namespace SimpleSOAPClient
 			UITableViewCell cell = tableView.DequeueReusableCell(cellIdentifier);
 			if (cell == null)
 				cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifier);
-			cell.TextLabel.Text = tableItems[indexPath.Row].DisplayText;
-			cell.DetailTextLabel.Text = "";
+			cell.TextLabel.Text = tableItems[indexPath.Row].TitleText;
+			cell.DetailTextLabel.Text = tableItems[indexPath.Row].BodyText;
 			return cell;
 		}
 
@@ -34,8 +34,8 @@ namespace SimpleSOAPClient
 
 		public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 		{
-			ItemListItem tableItem = tableItems[indexPath.Row];
-			TheStinkingRowWasSelected(this, new ItemListItemEventArgs(tableItem));
+			QueryResultItem tableItem = tableItems[indexPath.Row];
+			TheStinkingRowWasSelected(this, new QueryResultItemEventArgs(tableItem));
 		}
 
 	}

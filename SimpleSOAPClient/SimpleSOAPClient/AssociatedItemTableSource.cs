@@ -5,15 +5,14 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-	public class BusinessObjectTableSource : UITableViewSource
+	public class AssociatedItemTableSource : UITableViewSource
 	{
-		//string[] tableItems; //change to List instead of string
-		List<BusinessObjectItem> tableItems = new List<BusinessObjectItem>();
+		List<AssociatedItem> tableItems = new List<AssociatedItem>();
 
 		string cellIdentifier = "TableCell";
 		public EventHandler TheStinkingRowWasSelected;
 
-		public BusinessObjectTableSource(List<BusinessObjectItem> items) //change to List instead of string
+		public AssociatedItemTableSource(List<AssociatedItem> items) //change to List instead of string
 		{
 			tableItems = items;
 		}
@@ -35,14 +34,8 @@ namespace SimpleSOAPClient
 
 		public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 		{
-			//base.RowSelected(tableView, indexPath);
 
-			//CherwellServiceAPI api = new CherwellServiceAPI();
-			//await api.getLogin();
-			//await api.getItemList(tableItems[indexPath.Row].ItemType, tableItems[indexPath.Row].ItemId, "", false);
-
-			//pass value to Cargo
-			BusinessObjectItem item = new BusinessObjectItem();
+			AssociatedItem item = new AssociatedItem();
 			item.Cargo = tableItems[indexPath.Row].Cargo;
 			//new UIAlertView("Alert", tableItems[indexPath.Row].Cargo, null, "OK", null).Show();
 			//new UIAlertView("Alert", item.Cargo, null, "OK", null).Show();
@@ -50,11 +43,7 @@ namespace SimpleSOAPClient
 			tableView.DeselectRow(indexPath, true);
 
 
-			TheStinkingRowWasSelected(this, new BusinessObjectItemEventArgs(tableItems[indexPath.Row]));
-
-
-			//GetListItemVC controller = this.Storyboard.InstantiateViewController("GetListItemVC") as GetListItemVC;
-			//this.NavigationController.PushViewController(controller, true);
+			TheStinkingRowWasSelected(this, new AssociatedItemEventArgs(tableItems[indexPath.Row]));
 
 		}
 

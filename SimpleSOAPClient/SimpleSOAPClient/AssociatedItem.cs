@@ -1,7 +1,7 @@
 ﻿using System;
 namespace SimpleSOAPClient
 {
-	public class BusinessObjectItem
+	public class AssociatedItem
 	{
 		public string ItemType { get; private set; }
 		public string ItemId { get; private set; }
@@ -10,7 +10,7 @@ namespace SimpleSOAPClient
 		public string ItemImageId { get; private set; }
 		public string BusObDescription { get; private set; }
 
-		public BusinessObjectItem(string itemType, string itemId, string cargo, string itemDisplayText, string itemImageId, string busObDescription)
+		public AssociatedItem(string itemType, string itemId, string cargo, string itemDisplayText, string itemImageId, string busObDescription)
 		{
 			ItemType = itemType;
 			ItemId = itemId;
@@ -20,7 +20,7 @@ namespace SimpleSOAPClient
 			BusObDescription = busObDescription;
 		}
 
-		public BusinessObjectItem()
+		public AssociatedItem()
 		{
 		}
 	}

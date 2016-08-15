@@ -11,8 +11,8 @@ using UIKit;
 
 namespace SimpleSOAPClient
 {
-    [Register ("QueryViewController\t")]
-    partial class QueryViewController
+    [Register ("BusinessObjectView")]
+    partial class BusinessObjectView
     {
         void ReleaseDesignerOutlets ()
         {
