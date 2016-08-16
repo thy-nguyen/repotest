@@ -28,7 +28,7 @@ namespace SimpleSOAPClient
 			UITableView table;
 			table = new UITableView
 			{
-				Frame = new CoreGraphics.CGRect(0, 30, View.Bounds.Width, View.Bounds.Height - 30),
+				Frame = new CoreGraphics.CGRect(0, 60, View.Bounds.Width, View.Bounds.Height - 60),
 				Source = new QueryViewTableSource(items)
 			};
 

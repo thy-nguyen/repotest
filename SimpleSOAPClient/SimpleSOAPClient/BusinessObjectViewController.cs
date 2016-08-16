@@ -1,11 +1,14 @@
 using Foundation;
 using System;
 using UIKit;
+using WebKit;
+using System.IO;
 
 namespace SimpleSOAPClient
 {
     public partial class BusinessObjectViewController : UIViewController
     {
+		UIWebView webView;
 
 		public BusinessObject m_businessObject;
 
@@ -37,8 +40,14 @@ namespace SimpleSOAPClient
 			CherwellServiceAPI api = new CherwellServiceAPI();
 			m_businessObject = await api.getIndividualBusinessObject(TypeId, RecId);
 
-			//theWebView.LoadHtml(m_businessObject.DisplayHtml);
+			string contentDirectoryPath = Path.Combine(NSBundle.MainBundle.BundlePath, "/");
+			webView = new UIWebView(View.Bounds);
+			webView.ScalesPageToFit = true;
+			//Frame = new CoreGraphics.CGRect(0, 60, View.Bounds.Width, View.Bounds.Height - 60)
+			webView.Frame = new CoreGraphics.CGRect(0, 60, View.Bounds.Width, View.Bounds.Height - 60);
 
+			View.AddSubview(webView);
+			webView.LoadHtmlString(m_businessObject.DisplayHtml, new NSUrl(contentDirectoryPath));
 
 		}
     }
